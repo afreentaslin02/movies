@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinePlus </title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <nav> 
+        <label class="logo-container">
+           <img src="logo.png" alt="My Movie Logo" class="logo" />
+
+        </label>
+
+       <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#showes">Shows</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+           </ul>
+
+<div class="hamburger">
+  <span></span>
+  <span></span>
+   <span></span>
+   <span></span>
+    </div>
+    </nav>
+
+<section id="home">
+  <div class="intro-container">
+  <div class="text-content">
+  <h1>CinePlus</h1>
+    <p>"From critically acclaimed blockbusters to hidden indie gems, CinePlus brings the&nbsp;&nbsp; magic of the movies right to your screen."</p>
+   
+    <button onclick="location.href='#trending'" class="explore-btn">Explore Trending Movies</button>
+  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+<!--svg images-->
+
+  <div class="image-content">
+<svg width="400" height="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+
+  <g class="float">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="80" fill="#2d3b8f"/>
+<!---->
+    <rect x="60" y="100" width="80" height="50" rx="5" fill="#1a223f"/>
+    
+    <!-- Play Icon -->
+    <polygon points="90,115 90,135 110,125" fill="#4a68d1"/>
+
+    <!-- Clapperboard Top -->
+    <rect x="55" y="75" width="90" height="20" rx="3" fill="#1a223f"/>
+    <line x1="55" y1="75" x2="145" y2="95" stroke="#ffffff" stroke-width="4" stroke-dasharray="10,10"/>
+
+    <!-- Stars & Circles -->
+    <circle cx="40" cy="40" r="5" fill="#7aa0ff"/>
+    <circle cx="160" cy="40" r="5" fill="#7aa0ff"/>
+    <circle cx="170" cy="130" r="4" fill="#7aa0ff"/>
+    <circle cx="30" cy="130" r="3" fill="#7aa0ff"/>
+    <polygon points="30,70 33,76 40,76 35,80 37,87 30,83 23,87 25,80 20,76 27,76" fill="#7aa0ff"/>
+  </g>
+</svg>
+</section>
+</div>
+<br><br><br><br><br><br><br>
+
+
+  <div class="main-container">
+
+    <!-- Trending Section -->
+    <section id="trending">
+      <h1>Trending Movies</h1>
+      <h3 class="subtitle">Discover the hottest films everyone is talking about right now!</h3>
+    </section>
+
+    <br>
+
+    <!-- Movie Cards -->
+    <div class="movie-row">
+
+      <!-- Movie Card 1 -->
+      <div class="movie-card" onclick="showModal()">
+        <img class="poster" src="bloodlines.jpg" alt="Movie Poster">
+        <div class="info-hover">
+          <h4>Bloodlines</h4>
+          <p>Dark secrets and family betrayal unfold.</p>
+          <p><b>Genre:</b> Action</p>
+          <p><b>Rating:</b> ★★★★☆</p>
+        </div>
+        <div class="duration">2h 10m</div>
+        <a class="watch-now" href="https://www.netflix.com" target="_blank">Watch Now</a>
+        <div class="watchlist-toggle">
+          <input type="checkbox" id="watch1">
+          <label for="watch1"></label>
+        </div>
+      </div>
+
+      <!-- Movie Card 2 -->
+      <div class="movie-card" onclick="showModal()">
+        <img class="poster" src="captain america.jpg" alt="Movie Poster">
+        <div class="info-hover">
+          <h4>Captain America</h4>
+          <p>Sam Wilson steps into the role of Captain America, confronting political conspiracies and the emergence of the Red Hulk.</p>
+          <p><b>Genre:</b> Superhero</p>
+          <p><b>Rating:</b> ★★★★☆</p>
+        </div>
+        <div class="duration">2h 12m</div>
+        <a class="watch-now" href="https://www.hotstar.com/in/movies/captain-america-brave-new-world/1271337438" target="_blank">Watch Now</a>
+        <div class="watchlist-toggle">
+          <input type="checkbox" id="watch2">
+          <label for="watch2"></label>
+        </div>
+      </div>
+
+      <!-- Movie Card 3 -->
+      <div class="movie-card" onclick="showModal()">
+        <img class="poster" src="too catch killer2.jpg" alt="Movie Poster">
+        <div class="info-hover">
+          <h4>To Catch a Killer</h4>
+          <p>A talented but troubled cop is recruited to help track down a serial killer terrorizing the city.</p>
+          <p><b>Genre:</b> Thriller/Crime</p>
+          <p><b>Rating:</b> ★★★★★</p>
+        </div>
+        <div class="duration">1h 59m</div>
+        <a class="watch-now" href="https://www.netflix.com" target="_blank">Watch Now</a>
+        <div class="watchlist-toggle">
+          <input type="checkbox" id="watch3">
+          <label for="watch3"></label>
+        </div>
+      </div>
+
+      <!-- Movie Card 4 -->
+      <div class="movie-card" onclick="showModal()">
+        <img class="poster" src="Annabelle.jpg" alt="Movie Poster">
+        <div class="info-hover">
+          <h4>Annabelle</h4>
+          <p>When a young couple receives a vintage doll as a gift, their lives turn into a nightmare as the doll becomes a vessel for a malevolent spirit.</p>
+          <p><b>Genre:</b> Horror, Supernatural, Thriller</p>
+          <p><b>Rating:</b> ★★★☆☆</p>
+        </div>
+        <div class="duration">99m</div>
+        <a class="watch-now" href="https://www.hotstar.com/in/movies/annabelle/1971000592/watch" target="_blank">Watch Now</a>
+        <div class="watchlist-toggle">
+          <input type="checkbox" id="watch4">
+          <label for="watch4"></label>
+        </div>
+      </div>
+      <!-- Movie Card 5 -->
+<div class="movie-card" onclick="showModal()">
+  <img class="poster" src="Inception .jpg" alt="Movie Poster">
+  <div class="info-hover">
+    <h4>Inception</h4>
+    <p>A thief who enters the dreams of others must plant an idea into a target's mind to pull off the ultimate heist.</p>
+    <p><b>Genre:</b> Sci-Fi, Thriller</p>
+    <p><b>Rating:</b> ★★★★★</p>
+  </div>
+  <div class="duration">2h 28m</div>
+  <a class="watch-now" href="https://www.netflix.com" target="_blank">Watch Now</a>
+  <div class="watchlist-toggle">
+    <input type="checkbox" id="watch5">
+    <label for="watch5"></label>
+  </div>
+</div>
+
+    </div> <!-- End of movie-row -->
+
+ 
+  
+      <!-- Popular Showes Section -->
+<section id="showes">
+  <h1>Popular Showes</h1>
+  <h3 class="subtitle">Shows That Spark Emotion and Imagination.</h3>
+<br>
+  <div class="movie-row">
+    <!-- Show 1 -->
+    <div class="movie-card" onclick="showModal()">
+      <img class="poster" src="Breaking bad .jpg" alt="Breaking Bad Poster">
+      <div class="info-hover">
+        <h4>Breaking Bad</h4>
+        <p>A high school teacher turns to crime.</p>
+        <p><b>Genre:</b> Crime/Drama</p>
+        <p><b>Rating:</b> ★★★★★</p>
+      </div>
+      <div class="duration">5 Seasons</div>
+      <a class="watch-now" href="https://www.netflix.com" target="_blank">Watch Now</a>
+      <div class="watchlist-toggle">
+        <input type="checkbox" id="show1">
+        <label for="show1"></label>
+      </div>
+    </div>
+
+    <!-- Show 2 -->
+    <div class="movie-card" onclick="showModal()">
+      <img class="poster" src= "download.jpg" alt="Stranger Things Poster">
+      <div class="info-hover">
+        <h4>Stranger Things</h4>
+        <p>Mystery unfolds in a small town.</p>
+        <p><b>Genre:</b> Sci-fi/Thriller</p>
+        <p><b>Rating:</b> ★★★★☆</p>
+      </div>
+      <div class="duration">4 Seasons</div>
+      <a class="watch-now" href="https://www.netflix.com" target="_blank">Watch Now</a>
+      <div class="watchlist-toggle">
+        <input type="checkbox" id="show2">
+        <label for="show2"></label>
+      </div>
+    </div>
+
+    <!-- Show 3 -->
+    <div class="movie-card" onclick="showModal()">
+      <img class="poster" src="Game of Thrones .jpg" alt="Game of Thrones Poster">
+      <div class="info-hover">
+        <h4>Game of Thrones</h4>
+        <p>Epic battles for the Iron Throne.</p>
+        <p><b>Genre:</b> Fantasy/Drama</p>
+        <p><b>Rating:</b> ★★★★☆</p>
+      </div>
+      <div class="duration">8 Seasons</div>
+      <a class="watch-now" href="https://www.hotstar.com" target="_blank">Watch Now</a>
+      <div class="watchlist-toggle">
+        <input type="checkbox" id="show3">
+        <label for="show3"></label>
+      </div>
+    </div>
+
+    <!-- Show 4 -->
+    <div class="movie-card" onclick="showModal()">
+      <img class="poster" src="friends.jpg" alt="Friends Poster">
+      <div class="info-hover">
+        <h4>Friends</h4>
+        <p>Six friends navigate life in NYC.</p>
+        <p><b>Genre:</b> Comedy/Romance</p>
+        <p><b>Rating:</b> ★★★★☆</p>
+      </div>
+      <div class="duration">10 Seasons</div>
+      <a class="watch-now" href="https://www.netflix.com" target="_blank">Watch Now</a>
+      <div class="watchlist-toggle">
+        <input type="checkbox" id="show4">
+        <label for="show4"></label>
+      </div>
+    </div>
+
+    <!-- Show 5 -->
+    <div class="movie-card" onclick="showModal()">
+      <img class="poster" src="The Office.jpg" alt="The Office Poster">
+      <div class="info-hover">
+        <h4>The Office</h4>
+        <p>Mockumentary about office life.</p>
+        <p><b>Genre:</b> Comedy</p>
+        <p><b>Rating:</b> ★★★★☆</p>
+      </div>
+      <div class="duration">9 Seasons</div>
+      <a class="watch-now" href="https://www.peacocktv.com" target="_blank">Watch Now</a>
+      <div class="watchlist-toggle">
+        <input type="checkbox" id="show5">
+        <label for="show5"></label>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  </div> <!-- End of main-container -->
+
+<!--review section -->
+
+<section id="reviews">
+  <h1> User Reviews</h1>
+  <h3 class="subtitle">Hear what our viewers are saying!</h3>
+</section>
+
+  <div class="reviews-container">
+   
+    <div class="review-cards">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <img src="1.jpg" alt="User 1">
+        <h4>Afreen Taslin</h4>
+        <p>Absolutely loved the selection of shows! The interface is smooth and clean.</p>
+      </div>
+      <!-- Review 2 -->
+      <div class="review-card">
+        <img src="2.jpeg".jpeg" alt="User 2">
+        <h4>Krittika Das</h4>
+        <p>Amazing experience. Highly recommended!</p>
+      </div>
+      <!-- Review 3 -->
+      <div class="review-card">
+        <img src="3.jpg" alt="User 3">
+        <h4>Nafisha Taslim</h4>
+        <p>I found all my favorite shows in one place. Great recommendations too!</p>
+      </div>
+    </div>
+
+    <!-- Part 2: Review Form -->
+    <div class="review-form">
+      <h3>Submit Your Review</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Write your review..." rows="5" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!--Footer Part-->
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="social-media">
+      <a href="https://www.facebook.com" target="_blank"> facebook</a>
+      <a href="https://www.instagram.com/afreentaslin/" target="_blank">instagram</a>
+      <a href="https://www.youtube.com" target="_blank">youtube</a>
+    </div>
+
+    <div class="footer-links">
+      <a href="https://www.example.com/terms" target="_blank">Terms & Conditions</a>
+      <a href="https://www.example.com/privacy" target="_blank">Privacy Policy</a>
+    </div>
+
+    <p>&copy; 2025 CinePlus. All rights reserved.</p>
+  </div>
+  </footer>
+
+
+<a id="home"></a>
+
+    <!-- Back to Top Button (links to the top anchor) -->
+  <a href="#top" class="back-to-top">⬆</a>
+
+
+
+  
+
+</body>
+</html>
